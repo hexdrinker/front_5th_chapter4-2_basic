@@ -45,6 +45,7 @@ function displayProducts(products) {
 
     const button = document.createElement("button");
     button.textContent = "Add to bag";
+    button.setAttribute("data-product-id", product.id);
 
     // Append elements to the product info div
     infoDiv.appendChild(category);
@@ -64,6 +65,16 @@ function displayProducts(products) {
 loadProducts();
 
 // Simulate heavy operation. It could be a complex price calculation.
-for (let i = 0; i < 10000000; i++) {
-  const temp = Math.sqrt(i) * Math.sqrt(i);
+function performHeavyCalculation() {
+  let i = 0;
+  function chunk() {
+    const end = Math.min(i + 100000, 10000000);
+    for (; i < end; i++) {
+      const temp = Math.sqrt(i) * Math.sqrt(i);
+    }
+    if (i < 10000000) setTimeout(chunk, 0);
+  }
+  chunk();
 }
+
+performHeavyCalculation();
