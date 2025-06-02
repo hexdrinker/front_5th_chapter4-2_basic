@@ -8,6 +8,8 @@
 
 ## 🔗 2. 링크
 
+https://front-5th-chapter4-2-basic-neon.vercel.app/ ( Vercel 배포 )
+
 ## 📚 3. 주요 개념 정리
 
 ## 🔥 4. 성능 개선 과정 및 결과
