@@ -251,10 +251,6 @@ section.best-sellers .product-slider .product {
   cursor: pointer;
 }
 
-section.best-sellers .product-slider .product img {
-  max-width: 40%;
-}
-
 section.best-sellers .product-slider .product .product-picture {
   height: 100%;
   display: flex;
