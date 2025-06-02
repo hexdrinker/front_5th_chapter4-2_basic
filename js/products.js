@@ -22,6 +22,7 @@ function displayProducts(products) {
     img.src = product.image;
     img.alt = `product: ${product.title}`;
     img.width = 250;
+    img.loading = "lazy";
     pictureDiv.appendChild(img);
 
     // Create the product info div
@@ -57,7 +58,7 @@ function displayProducts(products) {
 
     fragment.appendChild(productElement);
   });
-  container.appendChild(productElement);
+  container.appendChild(fragment);
 }
 
 loadProducts();
