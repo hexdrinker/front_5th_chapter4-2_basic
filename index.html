@@ -109,22 +109,23 @@
           class="mobile"
           media="(max-width: 576px)"
           srcset="images/Hero_Mobile.avif"
+          width="575"
+          height="575"
         />
         <source
           class="tablet"
           media="(max-width: 960px)"
           srcset="images/Hero_Tablet.avif"
-        />
-        <source
-          class="desktop"
-          media="(min-width: 961px)"
-          srcset="images/Hero_Desktop.avif"
+          width="960"
+          height="770"
         />
         <img
           class="desktop"
           src="images/Hero_Desktop.avif"
           alt="VR Headsets Hero Image"
           loading="eager"
+          width="960"
+          height="560"
         />
       </picture>
 
@@ -154,8 +155,16 @@
             <div class="product-picture">
               <img
                 src="images/vr1.avif"
+                srcset="
+                  images/vr1.avif 160w,
+                  images/vr1.avif 320w,
+                  images/vr1.avif 480w
+                "
+                size="(max-width: 767px) 160px, (max-width: 1023px): 320px, 480px"
                 alt="product: Penom Case"
                 loading="lazy"
+                width="125"
+                height="125"
               />
             </div>
             <div class="product-info">
@@ -172,8 +181,16 @@
             <div class="product-picture">
               <img
                 src="images/vr2.avif"
+                srcset="
+                  images/vr2.avif 160w,
+                  images/vr2.avif 320w,
+                  images/vr2.avif 480w
+                "
+                size="(max-width: 767px) 160px, (max-width: 1023px): 320px, 480px"
                 alt="product: Noise Cancelling Headphone"
                 loading="lazy"
+                width="125"
+                height="125"
               />
             </div>
             <div class="product-info">
@@ -190,8 +207,16 @@
             <div class="product-picture">
               <img
                 src="images/vr3.avif"
+                srcset="
+                  images/vr3.avif 160w,
+                  images/vr3.avif 320w,
+                  images/vr3.avif 480w
+                "
+                size="(max-width: 767px) 160px, (max-width: 1023px): 320px, 480px"
                 alt="product: Canon Digital SLR EOS Rebel T6"
                 loading="lazy"
+                width="125"
+                height="125"
               />
             </div>
             <div class="product-info">
