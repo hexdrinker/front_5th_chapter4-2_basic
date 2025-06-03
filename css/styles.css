@@ -139,6 +139,7 @@ section.hero img {
   height: auto;
   filter: brightness(50%);
   display: block;
+  max-width: 960px;
 }
 
 .hero-content {
@@ -505,6 +506,11 @@ footer .copyright-text {
     display: inline-block;
   }
 
+  section.hero img {
+    max-width: 960px;
+    aspect-ratio: 960/770;
+  }
+
   .hero-content h1 {
     font-size: 40px;
     letter-spacing: 1px;
@@ -636,6 +642,11 @@ footer .copyright-text {
   header .logo .blue-dot {
     width: 7px;
     height: 7px;
+  }
+
+  section.hero img {
+    max-width: 575px;
+    aspect-ratio: 1/1;
   }
 
   .hero-content {
