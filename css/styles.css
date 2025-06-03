@@ -139,7 +139,6 @@ section.hero img {
   height: auto;
   filter: brightness(50%);
   display: block;
-  max-width: 960px;
 }
 
 .hero-content {
